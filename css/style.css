@@ -4,21 +4,14 @@
     margin: 0;
 }
 
-<<<<<<< Updated upstream
- .contenedor {
-=======
 .contenedor {
->>>>>>> Stashed changes
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, auto);
 } 
-<<<<<<< Updated upstream
-=======
 
 
 
->>>>>>> Stashed changes
 
 .carrusel {
     background-color: rgb(160, 95, 151);
