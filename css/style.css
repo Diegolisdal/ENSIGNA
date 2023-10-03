@@ -2,98 +2,16 @@
 * {
     padding: 0;
     margin: 0;
+    
+
 }
 
 .contenedor {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, auto);
-} 
-
-
-
-
-.carrusel {
-    background-color: rgb(160, 95, 151);
-    margin: 10px 0px;
-    border-color: #000;
-    width: 100%;
-    height: 300px;
 }
 
-
-
-
-.noticias {
-    display: flexbox;
-}
-
-.construccion,
-.iso,
-.eventos {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, auto);
-}
-
-@keyframes cambio {
-    0% {
-        margin-left: 0;
-    }
-
-    20% {
-        margin-left: 0;
-    }
-
-    25% {
-        margin-left: -100%;
-    }
-
-    45% {
-        margin-left: -100%;
-    }
-
-    50% {
-        margin-left: -100%;
-    }
-
-    70% {
-        margin-left: -100%;
-    }
-
-    75% {
-        margin-left: -200%;
-    }
-
-    100% {
-        margin-left: -200%;
-    }
-}
-
-.testimonios{
-    display:flex;
-    /* flex-direction:column; */
-    justify-content:space-between;
-    
-  }
- 
-  .tarjeta{
-    padding: 10px;
-    width: 33%; 
-    border: 1px solid lightgray;
-    box-shadow: 2px 2px 8px 4px #d3d3d3d1;
-    border-radius:15px;
-    font-family: sans-serif;
-  }
-.tarjeta img{
-    object-fit: cover;
-    width: 100%;
-}
-h4 {
-    margin: 10px 0px;
-
-}
- 
 
 /* COMIENZA RESPONSIVO */
 /*##################################################################*/
@@ -128,7 +46,7 @@ h4 {
         grid-area: 2/1/3/5;
         text-align: center;
         padding: 15px;
-        /* background: url(../img/fondo7.jpg);
+       /* background: url(../img/fondo7.jpg);
         /*opcion 2*/
         background: url(../img/fondo6.jpg);
         background-position: center;
@@ -179,83 +97,10 @@ h4 {
     }
 
     /* ESTE ES EL SECTOR PARA LA PARTE RESPONSIVA DEL MAIN TAMAÑO TELEFONOS MOVILES */
-    .testimonios{
-        
-        flex-direction:column;
-        margin-right: 20px;
-               
-      }
-      .tarjeta{
-        /* margin: 10px 0px; */
-        width: 100%; 
-        
-      }
+
     .main {
-        grid-area: 2/1/3/5; /*ubicacion en el grid general */
-        margin: 20px 10px;
-        font-family: 'Courier New';
-        color: rgb(29, 29, 29);
-    }
-
-    .main h2,
-    h3 {
-        padding: 10px 0px;
-    }
-
-    .main p {
-        color: rgb(29, 29, 29);
-        font-family: monospace;
-        text-align: justify;
-        font-size: 1em;
-        margin-top: 10px;
-    }
-
-    .construccion h3,
-    .eventos h3,
-    .iso h3 {
-        grid-area: 1/1/2/7;
-    }
-
-    .construccion p,
-    .eventos p, .iso p {
-        grid-area: 3/1/4/7;        
-    }
-    
-    .slider {
-        margin: auto;
-        grid-area: 2/1/3/7;
-        overflow: hidden;
-        place-items: center;
-    }
-
-    .slideriso {
-        margin: auto;
-        grid-area: 2/1/3/7;
-        overflow: hidden;
-        place-items: center
-    }
-
-    .construccion,
-    .iso,
-    .eventos {
-        margin-bottom: 30px;
-    }
-
-    .slider ul {
-        display: flex;
-        width: 300%;
-        animation: cambio 25s infinite alternate linear;
-    }
-
-    .slider li {
-        width: 100%;
-        list-style: none;
-        text-align: right;
-    }
-
-    .slider img {
-        width: 100%;
-        height: 100%;
+        grid-area: 2/1/3/5; /*No modificar, ubica main en el grid principal, */
+        /* rellenar aqui, podes usar cualquier display*/
     }
 
     /* NO MODIFICAR DE AQUI EN ADELANTE, HASTA  NUEVO AVISO */
@@ -282,7 +127,6 @@ h4 {
     .redsocial a {
         text-align: center;
         margin-right: 30px;
-        text-decoration: none;
     }
 
     .links {
@@ -403,72 +247,10 @@ h4 {
     /* ESTE ES EL SECTOR PARA LA PARTE RESPONSIVA DEL MAIN TAMAÑO MOVIL HORIZONTAL O TABLETS */
 
     .main {
-        grid-area: 2/1/3/5; /*ubicacion en el grid general */
-        margin: 20px 10px;
-        font-family: 'Courier New';
-        color: rgb(29, 29, 29);
+        grid-area: 2/1/3/5; /*No modificar, ubica main en el grid principal, */
+        /* rellenar aqui, podes usar cualquier display*/
     }
 
-    .main h2,
-    h3 {
-        padding: 10px 0px;
-    }
-
-    .main p {
-        color: rgb(29, 29, 29);
-        font-family: monospace;
-        text-align: justify;
-        font-size: 1em;
-        margin-top: 10px;
-    }
-
-    .construccion h3,
-    .eventos h3,
-    .iso h3 {
-        grid-area: 1/1/2/7;
-    }
-
-    .construccion p,
-    .eventos p, .iso p {
-        grid-area: 3/1/4/7;        
-    }
-    
-    .slider {
-        margin: auto;
-        grid-area: 2/1/3/7;
-        overflow: hidden;
-        place-items: center;
-    }
-
-    .slideriso {
-        margin: auto;
-        grid-area: 2/1/3/7;
-        overflow: hidden;
-        place-items: center
-    }
-
-    .construccion,
-    .iso,
-    .eventos {
-        margin-bottom: 30px;
-    }
-
-    .slider ul {
-        display: flex;
-        width: 300%;
-        animation: cambio 25s infinite alternate linear;
-    }
-
-    .slider li {
-        width: 100%;
-        list-style: none;
-        text-align: right;
-    }
-
-    .slider img {
-        width: 100%;
-        height: 100%;
-    }
 
     /* NO MODIFICAR DE AQUI EN ADELANTE, HASTA  NUEVO AVISO */
 
@@ -497,7 +279,6 @@ h4 {
     .redsocial a {
         text-align: center;
         margin-right: 30px;
-        text-decoration: none;
     }
 
     .links {
@@ -560,7 +341,7 @@ h4 {
     .logo a img {
         width: 200px;
         vertical-align: middle;
-
+       
     }
 
     .nav {
@@ -631,85 +412,10 @@ h4 {
     /* ESTE ES EL SECTOR PARA LA PARTE RESPONSIVA DEL MAIN TAMAÑO NOTEBOOKS */
 
     .main {
-        grid-area: 2/1/3/5;
-        margin: 20px 30px;
-        font-family: 'Courier New';
-        color: rgb(29, 29, 29);
+        grid-area: 2/1/3/5; /*No modificar, ubica main en el grid principal, */
+        /* rellenar aqui, podes usar cualquier display*/
     }
 
-    .main h2,
-    h3 {
-        padding: 10px 0px;
-    }
-
-    .main p {
-        color: rgb(29, 29, 29);
-        font-family: monospace;
-        text-align: justify;
-        font-size: 1.1em;
-    }
-
-    .construccion h3,
-    .eventos h3,
-    .iso h3 {
-        grid-area: 1/1/2/7;
-    }
-
-    .construccion p,
-    .eventos p {
-        display: grid;
-        place-items: center;
-        grid-area: 2/3/3/7;
-        border-left: 2px solid rgb(173, 173, 173);
-        margin-left: 20px;
-        padding-left: 30px;
-    }
-
-    .iso p {
-        display: grid;
-        place-items: center;
-        grid-area: 2/1/3/5;
-        border-right: 2px solid rgb(173, 173, 173);
-        margin-right: 20px;
-        padding-right: 30px;
-    }
-
-    .slider {
-        margin: auto;
-        grid-area: 2/1/3/3;
-        overflow: hidden;
-        place-items: center;
-    }
-
-    .slideriso {
-        margin: auto;
-        grid-area: 2/5/3/7;
-        overflow: hidden;
-        place-items: center
-    }
-
-    .construccion,
-    .iso,
-    .eventos {
-        margin-bottom: 30px;
-    }
-
-    .slider ul {
-        display: flex;
-        width: 300%;
-        animation: cambio 25s infinite alternate linear;
-    }
-
-    .slider li {
-        width: 100%;
-        list-style: none;
-        text-align: right;
-    }
-
-    .slider img {
-        width: 100%;
-        height: 100%;
-    }
 
     /* NO MODIFICAR DE AQUI EN ADELANTE */
 
@@ -737,7 +443,7 @@ h4 {
     .redsocial a {
         text-align: center;
         margin-right: 30px;
-        text-decoration: none;
+        
     }
 
     .links {
