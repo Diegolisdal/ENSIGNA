@@ -4,11 +4,11 @@
     margin: 0;
 }
 
-/* .contenedor {
+ .contenedor {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, auto);
-} */
+} 
 
 .carrusel {
     background-color: cadetblue;
