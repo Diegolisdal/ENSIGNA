@@ -46,7 +46,7 @@ cad = `
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="contacto.html" target="_blank">Contactanos</a></li>
-                <li><a href="concesionarios.html">Concesionarios</a></li>
+               
             </ul>
 
         </div>
