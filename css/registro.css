@@ -101,10 +101,6 @@
         /* rellenar aqui, podes usar cualquier display*/
     }
 
-    .loginForm{
-        display: none;
-    }
-
     /* NO MODIFICAR DE AQUI EN ADELANTE, HASTA  NUEVO AVISO */
 
     .footer {
@@ -253,9 +249,7 @@
         grid-area: 2/1/3/5; /*No modificar, ubica main en el grid principal, */
         /* rellenar aqui, podes usar cualquier display*/
     }
-    .loginForm{
-        display: none;
-    }
+
 
     /* NO MODIFICAR DE AQUI EN ADELANTE, HASTA  NUEVO AVISO */
 
@@ -416,23 +410,6 @@
     }
 
     /* ESTE ES EL SECTOR PARA LA PARTE RESPONSIVA DEL MAIN TAMAÑO NOTEBOOKS */
-    .loginForm{
-    display: none;
-    position: fixed;  /*Posición fija */
-    
-    z-index: 1; /* Se situará por encima de otros elementos de la página*/
-    /*padding-top: 200px; /* El contenido estará situado a 200px de la parte superior */
-    left: 0;
-    top: 0;
-    width: 100%; /* Ancho completo */
-    height: 100%; /* Algura completa */
-    overflow: auto; /* Se activará el scroll si es necesario */
-    }
-
-    .loginId{
-        margin-top: 200px;
-        margin-left: 200px
-    }
 
     .main {
         grid-area: 2/1/3/5; /*No modificar, ubica main en el grid principal, */
